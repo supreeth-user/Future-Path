@@ -1,11 +1,15 @@
 import { Outlet } from 'react-router-dom';
+import { NavBar } from '../NavBar';
+import { Footer } from '../Footer';
 
 export function Layout() {
   return (
     <div>
-      {/* Header, navigation, etc. can be added here */}
-      <Outlet />
-      {/* Footer can be added here */}
+      <NavBar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
 }
