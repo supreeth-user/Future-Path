@@ -1,0 +1,13 @@
+.navbar {
+  padding: 1rem;
+  border-bottom: var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
